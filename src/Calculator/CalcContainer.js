@@ -15,7 +15,7 @@ const Calculator = () => {
     if (isOperatorClicked || isReplaceInput) {
       updateInputVal(val);
     } else {
-      if ((val === 0 && inputVal === 0) || (inputVal > 1000000000)) {
+      if (val === 0 && inputVal === 0) {
         return;
       }
       const updatedInputVal = inputVal < 0 ? inputVal * 10 - val : inputVal * 10 + val;
