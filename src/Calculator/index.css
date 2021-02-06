@@ -1,0 +1,112 @@
+
+.container {
+  padding-left: 20px; 
+  height: 100%;
+}
+
+.header {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0 30px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.inputContainer {
+  width: 388px;
+  text-align: right;
+  font-size: 15px;
+  padding: 2px 5px;
+  border: 1px solid;
+}
+
+.calcContainer {
+  display: flex;
+  width: 400px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.column {
+  width: 100px;
+}
+
+.column > div {
+  border: 1px solid;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.column:last-child > div {
+  text-align: right;
+}
+
+.themeBtnContainer {
+  display: flex;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.themeBtnContainer > div:first-child {
+  background: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+
+.themeBtnContainer > div:last-child {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+
+.advanceBtnContainer {
+  display: flex;
+  width: 400px;
+  background: #f0f0f0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.advanceBtnContainer > div {
+  border: 1px solid;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  width: 33%;
+}
+
+.advancedTxt {
+  background: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+  width: fit-content;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.dark {
+  background: #000;
+}
+
+.dark .header {
+  color: white;
+}
+
+.dark .calcContainer, .dark .advanceBtnContainer {
+  color: white;
+  background: #666;
+}
+
+.dark .inputContainer {
+  background: white;
+  border: 1px solid white;
+}
+
+.dark .themeBtnContainer > div {
+  border: 1px solid white;
+}
